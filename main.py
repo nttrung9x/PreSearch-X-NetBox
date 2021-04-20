@@ -23,7 +23,6 @@ opts.add_experimental_option('useAutomationExtension', False)
 # opts.headless = True  # <-- Remove comment this line if you want to hide browser.
 # opts.add_argument('--proxy-server=%s' % 'YourProxy')  # <-- To use proxy, remove comment this line then replace 'YourProxy' by proxy string, such as 18.222.190.66:81.
 netbox_login_path = 'https://account.netbox.global/'
-netbox_wallet_path = 'chrome://wallet'
 netbox_cookies = [
     {
         'name': 'token',
@@ -34,6 +33,10 @@ netbox_cookies = [
         'path': '/',
     },
 ]
+netbox_wallet_path = 'chrome://wallet'
+# Replace by your wallet code -->
+netbox_wallet_code = 'YourWalletCode'
+# <-- Replace by your wallet code
 
 sync = True
 
@@ -94,6 +97,10 @@ def PreSearch():
                 time.sleep(1)
                 browser.get(netbox_wallet_path)
                 time.sleep(1)
+                browser.find_element_by_xpath("//textarea[@id='restore__mnemonic']").send_keys(netbox_wallet_code)
+                browser.find_element_by_xpath("//button[@id='restore__control']").click()
+                time.sleep(30)
+
                 browser.get(path)
                 time.sleep(1)
                 for cookie in presearch_cookies:

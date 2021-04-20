@@ -99,7 +99,6 @@ def PreSearch(account):
     if 'proxy' in account and account['proxy'] != 'YourProxy':
         opts.add_argument('--proxy-server=%s' % account['proxy'])
     netbox_login_path = 'https://account.netbox.global/'
-    netbox_wallet_path = 'chrome://wallet'
     netbox_cookies = [
         {
             'name': 'token',
@@ -110,6 +109,10 @@ def PreSearch(account):
             'path': '/',
         },
     ]
+    netbox_wallet_path = 'chrome://wallet'
+    # Replace by your wallet code -->
+    netbox_wallet_code = 'YourWalletCode'
+    # <-- Replace by your wallet code
 
     # App config
     app = 'PreSearch'
@@ -137,6 +140,10 @@ def PreSearch(account):
                 time.sleep(1)
                 browser.get(netbox_wallet_path)
                 time.sleep(1)
+                browser.find_element_by_xpath("//textarea[@id='restore__mnemonic']").send_keys(netbox_wallet_code)
+                browser.find_element_by_xpath("//button[@id='restore__control']").click()
+                time.sleep(30)
+
                 browser.get(path)
                 time.sleep(1)
                 for cookie in presearch_cookies:
