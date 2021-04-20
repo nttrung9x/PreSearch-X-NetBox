@@ -97,9 +97,12 @@ def PreSearch():
                 time.sleep(1)
                 browser.get(netbox_wallet_path)
                 time.sleep(1)
-                browser.find_element_by_xpath("//textarea[@id='restore__mnemonic']").send_keys(netbox_wallet_code)
-                browser.find_element_by_xpath("//button[@id='restore__control']").click()
-                time.sleep(30)
+                try:
+                    browser.find_element_by_xpath("//textarea[@id='restore__mnemonic']").send_keys(netbox_wallet_code)
+                    browser.find_element_by_xpath("//button[@id='restore__control']").click()
+                    time.sleep(30)
+                except:
+                    pass
 
                 browser.get(path)
                 time.sleep(1)
