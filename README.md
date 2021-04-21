@@ -30,11 +30,13 @@ Daily, you have random 30 times which is rewarded 0.12 **PRE**. So after 1 month
 
 `multiaccount.py` (multi accounts, support proxy, support hidden browser)
 
+[![SC2 Video](http://i3.ytimg.com/vi/d9pJiNJKpuY/maxresdefault.jpg)](https://www.youtube.com/watch?v=d9pJiNJKpuY)
+
 [21/04/2021]
 
 `main.py` `multiaccount.py` Use NetBox to earn NBX.
 
-[![SC2 Video](http://i3.ytimg.com/vi/d9pJiNJKpuY/maxresdefault.jpg)](https://www.youtube.com/watch?v=d9pJiNJKpuY)
+[![SC2 Video](http://i3.ytimg.com/vi/v4L-ri5zdSs/maxresdefault.jpg)](https://www.youtube.com/watch?v=v4L-ri5zdSs)
 
 ###### Please do step by step to use:
 1. Install language **Python 3.9.4** https://www.python.org/downloads/.
@@ -81,11 +83,13 @@ Hằng ngày, bạn có 30 lượt tìm kiếm ngẫu nhiên được tặng 0.1
 
 `multiaccount.py` (nhiều tài khoản, có hỗ trợ proxy, có hỗ trợ chạy ngầm)
 
+[![SC2 Video](http://i3.ytimg.com/vi/d9pJiNJKpuY/maxresdefault.jpg)](https://www.youtube.com/watch?v=d9pJiNJKpuY)
+
 [21/04/2021]
 
 `main.py` `multiaccount.py` Dùng NetBox để kiếm NBX.
 
-[![SC2 Video](http://i3.ytimg.com/vi/d9pJiNJKpuY/maxresdefault.jpg)](https://www.youtube.com/watch?v=d9pJiNJKpuY)
+[![SC2 Video](http://i3.ytimg.com/vi/v4L-ri5zdSs/maxresdefault.jpg)](https://www.youtube.com/watch?v=v4L-ri5zdSs)
 
 ###### Vui lòng thực hiện theo các bước sau:
 1. Cài đặt ngôn ngữ **Python 3.9.4** https://www.python.org/downloads/.
